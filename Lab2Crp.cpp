@@ -4,7 +4,7 @@
 using namespace std;
 //CYKA BLYAT
 
-// Функция открытия файла ключей
+// Функция открытия файла ключей шифрования
 void OpenKeyFile() {
     const string PathOpenKeyFile = "KeyStore.txt";
     setlocale(LC_ALL, "rus");
