@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 
+//Основа
 // Функция открытия файла ключей
 void OpenKeyFile() {
     const string PathOpenKeyFile = "KeyStore.txt";
