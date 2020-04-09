@@ -2,8 +2,8 @@
 #include <fstream>
 #include <string>
 using namespace std;
+//CYKA BLYAT
 
-//Основа
 // Функция открытия файла ключей
 void OpenKeyFile() {
     const string PathOpenKeyFile = "KeyStore.txt";
@@ -25,6 +25,7 @@ void OpenKeyFile() {
     cout << line << endl;
 } // Функция открытия файла ключей
 
+//Основа
 void WriteKeyFile() {
     const string PathWriteFile = "DecryptKeys.txt";
     ofstream output(PathWriteFile);
