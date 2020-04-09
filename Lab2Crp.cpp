@@ -1,10 +1,18 @@
-﻿#include <iostream>
+﻿// Lab2Crp.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//написать программу, осуществляющую шифрование и дешифрование
+//произвольных файлов при помощи четырех примитивных криптоалгоритмов.Допускается как
+//реализация всех криптоалгоритмов в разных программах, так и в одной программе,
+//запускаемой в разных режимах.Программа должна генерировать ключ, сохранять его в
+//ключевом файле, считывать ключ из ключевого файла, шифровать данный файл по ключу и
+//расшифровывать закрытый файл
+//
+
+#include <iostream>
 #include <fstream>
 #include <string>
 using namespace std;
-//CYKA BLYAT
 
-// Функция открытия файла ключей шифрования
+// Функция открытия файла ключей
 void OpenKeyFile() {
     const string PathOpenKeyFile = "KeyStore.txt";
     setlocale(LC_ALL, "rus");
@@ -25,7 +33,6 @@ void OpenKeyFile() {
     cout << line << endl;
 } // Функция открытия файла ключей
 
-//Основа
 void WriteKeyFile() {
     const string PathWriteFile = "DecryptKeys.txt";
     ofstream output(PathWriteFile);
@@ -77,7 +84,7 @@ public:
         char c;
         for (i = 0; i < s.size(); i++)
         {
-            c = enc[i] % 78 + 48;
+            c = enc[i] % 74 + 48;
             cout << c;
         }
         cout << endl;
@@ -136,3 +143,4 @@ int main()
 
 
 }
+
